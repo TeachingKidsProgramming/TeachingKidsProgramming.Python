@@ -26,6 +26,7 @@ def stochastic(iteration, size, angle, par, factor=0.3):
     t.left(angle2)
     t.backward(size2)
     
-_lib.init()
-stochastic(iteration, size, angle=45, par=1/math.sqrt(2), factor=0.3)
-_lib.exit()
+if __name__ == "__main__":
+    _lib.init()
+    stochastic(iteration, size, angle=45, par=1/math.sqrt(2), factor=0.3)
+    _lib.exit()

@@ -23,16 +23,17 @@ def h_tree(iteration, size, angle=90, par=1/math.sqrt(2)):
     t.left(angle)
     t.backward(size)
     
-_lib.init()    
+if __name__ == "__main__":
+    _lib.init()    
 
-## classic H-tree
-h_tree(iteration, size, angle=90, par=1/math.sqrt(2))
+    ## classic H-tree
+    h_tree(iteration, size, angle=90, par=1/math.sqrt(2))
 
-## different angle
-#h_tree(iteration, size, angle=85, par=0.69)
+    ## different angle
+#    h_tree(iteration, size, angle=85, par=0.69)
 
-## Pythagoras tree
-#builtins.size = 200
-#h_tree(iteration, size, angle=45, par=1/math.sqrt(2))
+    ## Pythagoras tree
+#    builtins.size = 200
+#    h_tree(iteration, size, angle=45, par=1/math.sqrt(2))
 
-_lib.exit()
+    _lib.exit()
